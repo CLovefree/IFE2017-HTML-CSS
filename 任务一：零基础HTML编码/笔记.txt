@@ -1,0 +1,18 @@
+1. 文件类型声明强制使用。HTML5声明的简化。不要忘记<meta charset="utf-8">字符编码；
+2. HTML5的基本结构。<header>/<main>/<aside>/<footer>，使用role改善可访问性；<nav>标记导航；
+3. <article>标签的准确使用，作为容器；<section>定义区块，具有相似主题的一组内容；
+4. 基础标签：<h1>~<6>标题、<p>段落、<br/>换行、<a href="xxx">链接、<img src="xxxx">图像、<span>字词短语、<div>块级内容、<strong>和<em>的区别，一个突出重要性，一个突出着重点、<blockquote cite="http://xxxxx">引述、<abbr>解释缩写词、<dfn>定义术语、<sup><sub>上标下标等；
+5. 列表：ul>li无序列表，ol>li有序列表，di>dt,dd定义列表，有自动缩进；
+6. 表格：<table>包裹、<caption>标题、<th>表头、<tr>行、<td>列、<colspan>跨列、<rowspan>跨行、<border>边框；
+7. 表单：<form method="传送方式,如post" action="服务器文件">，<label for=“id（相关元素的id,比如input里的id）”>为input定义标注（简单说就是点击label里显示的文字，就会触发控件，浏览器自动聚焦），<input>有type、name命名以备后台使用、id、value默认值
+1)文本 type="text" 
+2)密码 type="password"
+3)单选 type="radio"， value=“提交服务器的值”
+4)复选 type="checkbox"
+5)文件 type="file"   如果多选文件的话加multiple="multiple"
+6)下拉列表 不用<input>，用<select><option value="提交值">显示的值；一个选项对应一个option
+7)下拉列表多选 <select multiple="multiple">
+8)多行文本输入框 <textarea row="行数" col="列数">文本</textarea>
+9)提交 <input tyoe="submit>
+10)重置 <input type="reset>
+8.&copy版权、&nbsp空格
