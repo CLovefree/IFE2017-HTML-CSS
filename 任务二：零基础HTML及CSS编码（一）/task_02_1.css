@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;padding:0
+}
+body{
+	font-family:"Microsoft YaHei UI";
+	background:#CCC;
+}
+header{
+	height:60px;
+	background:#333;
+}
+header h1 img{ 
+    padding-left:40px;
+	padding-top:15px;
+	height:40px;
+	width:40px;
+	float:left;
+}
+header nav ul{
+	float:right;
+	list-style:none;
+}
+header nav ul li{
+	line-height:60px;
+	width:100px;
+	float:left;
+}
+header nav ul li a{
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	color:#FFF;
+	font-size:12px;
+}
+header nav ul li a:hover{
+	color:#333;
+	background-color:#FFF;
+	font-size:14px;
+}
+	
+/*主体部分*/
+article,aside{
+	padding:20px;
+	margin:20px 30px;
+	background:#FFF;
+	box-shadow:1px 1px 3px 1px #333333
+}
+article h2{
+	padding:5px 0;
+}
+article h3{
+	padding:10px 0;
+	color:#666;
+	font-size:16px;
+}
+article a{
+	color:#009;
+	text-decoration:none;
+}
+article a:hover{
+	color:#0F3;
+}
+article p{
+	text-indent:2em;
+}
+/*作者和时间怎么不缩进???????*/
+.author,.publish_time{
+	font-size:12px;
+	color:#666;
+}
+article img{
+	align:right;
+}
+article ul li{
+	list-style-type:none;
+	text-indent:50px;
+	margin:5px;
+}
+/*图片集合开始*/
+article .picclass{
+	font-size:26px;
+	color:#000;
+}
+.picclass figure{
+	width:400px;
+	text-align:center;
+	border:1px #666666 solid;
+	margin:20px 50px;
+}
+.picclass figcaption{
+	line-height:80px;
+}
+.picclass img{
+	width:300px;
+	height:300px;
+}
+/*图片集合结束*/
+/*最后一篇开始*/
+article ol{
+	margin:15px 50px;
+}
+article ol li{
+	margin:8px;
+}
+/*表格开始*/
+.scoreTab{
+    width: 90%;
+    border-collapse:collapse;
+}
+.scoreTab tr, .scoreTab td{
+	text-align:left;
+	border: #999 solid 1px;
+	font-size:14px;
+	line-height:25px;
+}
+.scoreTab caption{
+	padding:10px
+}
+.scoreTab th{
+	background-color:#333;
+	color:#FFF;
+	font-size:15px;
+}
+/*侧栏开始*/
+aside {
+	overflow: auto;
+}
+
+form p {
+	position: relative;
+	top: -10px;
+	margin-left: 30%;
+	color: #444;
+	font-size: 0.7em;
+}
+
+aside h2 {
+	border-left: 4px #ddd solid;
+	padding: 1em;
+}
+label{
+	display:inline-block;
+	width:30%;
+	margin-bottom:20px;
+	text-align:right;
+}
+button{
+	width:90%;
+	height:3em;
+	border-radius:8px;
+	color:#FFF;
+	background-color:#09F;
+	margin-left:5%;
+}
+
+
+/*页脚*/
+footer{
+	color:#FFF;
+	text-align:center;
+	background-color:#333;
+	padding-top:20px;
+	padding-bottom:30px;
+}
+
+
+
+
