@@ -2,20 +2,17 @@
 	padding: 0;
 	margin: 0;
 }
-h3{
-	position: relative;
-	text-align: center;
-	color: #544F44;
-	top:200px;
-}
 #stage{
 	cursor: pointer;
 	position: relative;
-	top:calc(50%-90px);
-	left: calc(50%-250px);
-	width: 500px;
+	top:300px;
+	width: 100%;
 	height: 180px;
 	perspective: 1000px;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	transform-origin: 175px 90px 200px;
+	-webkit-transform-origin: 175px 90px 200px;
 }
 #wrap{
 	height: 180px;
@@ -24,11 +21,50 @@ h3{
 	left: 50%;
 	margin-left: -175px;
 	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	animation: Crousel 8s ease infinite;
+	-webkit-animation: Crousel 8s ease infinite;
 }
-#wrap .coursel{
+@keyframes Crousel{
+	0%{transform: rotateY(0);-webkit-transform: rotateY(0);}
+	20%{transform: rotateY(-72deg);-webkit-transform: rotateY(-72deg);}
+	40%{transform: rotateY(-144deg);-webkit-transform: rotateY(-144deg);}
+	60%{transform: rotateY(-216deg);-webkit-transform: rotateY(-216deg);}
+	80%{transform: rotateY(-288deg);-webkit-transform: rotateY(-288deg);}
+	100%{transform: rotateY(-360deg);-webkit-transform: rotateY(-360deg);}
+}
+@-webkit-keyframes Crousel{
+	0%{-webkit-transform: rotateY(0);}
+	20%{-webkit-transform: rotateY(-72deg);}
+	40%{-webkit-transform: rotateY(-144deg);}
+	60%{-webkit-transform: rotateY(-216deg);}
+	80%{-webkit-transform: rotateY(-288deg);}
+	100%{-webkit-transform: rotateY(-360deg);}
+}
+#wrap .crousel{
+	position: absolute;
+	top:50%;
 	height: 180px;
 	width: 350px;
-	position: absolute;
-	-webkit-background-size: cover;
-	background-size: cover;
+	margin-top: -90px;
+}
+#wrap img:nth-child(1){
+	transform: rotateY(0) translateZ(400px) ;
+	-webkit-transform: rotateY(0) translateZ(400px) ;
+}
+#wrap img:nth-child(2){
+	transform: rotateY(72deg) translateZ(400px) ;
+	-webkit-transform: rotateY(72deg) translateZ(400px) ;
+}
+#wrap img:nth-child(3){
+	transform: rotateY(144deg) translateZ(400px) ;
+	-webkit-transform: rotateY(144deg) translateZ(400px) ;
+}
+#wrap img:nth-child(4){
+	transform: rotateY(216deg) translateZ(400px) ;
+	-webkit-transform: rotateY(216deg) translateZ(400px) ;
+}
+#wrap img:nth-child(5){
+	transform: rotateY(288deg) translateZ(400px) ;
+	-webkit-transform: rotateY(288deg) translateZ(400px) ;
 }
