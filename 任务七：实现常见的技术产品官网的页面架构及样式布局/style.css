@@ -1,0 +1,266 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei";
+	font-style: 14px;
+}
+body{
+	min-width: 1280px;
+}
+a{
+	display:block;
+	text-decoration: none;
+}
+li{
+	display: inline-block;
+	list-style: none;
+}
+.clearfix:after{
+	content: "";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+/*header*/
+header{
+	height: 56px;
+	background: #fff;
+}
+/*header left部分*/
+header .site-title{
+	height: 56px;
+	float: left;
+	margin-left: 59px;
+	background: url(images/logo.png) no-repeat left center;
+}
+header .site-title span{
+	font-family: "SimHei";
+	font-size: 21px;
+	margin-left: 40px;
+	height: 56px;
+	line-height: 56px;
+	color: #393a3a;
+}
+/*header 登录部分*/
+header .login{
+	float: right;
+	background: url(images/login_img.png) no-repeat left center;
+}
+header .login a{
+	color: #e74f4d;	
+	padding-left: 20px;
+	height: 56px;
+	line-height: 56px;
+	margin-right: 66px;
+}
+/*header  nav部分*/
+header nav{
+	float: right;
+	margin-right: 122px;
+}
+header nav ul{
+	font-size: 0;
+}
+header nav a{
+	color:#787b83;
+	box-sizing: border-box;
+	padding: 18px 23px 12px 23px;
+	transition: all 0.1s ease;
+	height: 56px;
+	box-sizing: border-box;
+	overflow: hidden;
+	font-size: 14px;
+}
+header nav a:hover{
+	box-sizing: border-box;
+	border-bottom: 4px solid #e74f4d;
+}
+
+/*footer*/
+/*footer 联系我们*/
+footer{
+	background: #32353e;
+	font-family: "SimSun";
+	color: #fff;
+	padding-top: 90px;
+	text-align: center;
+	position: relative;
+}
+footer h4{
+	font-size: 21px;
+	font-family: "SimHei";
+}
+footer p{
+	width: 37%;
+	margin: 10px auto;
+	font-size: 12px;
+	white-space: pre;
+	line-height: 2em;
+}
+/*form表单*/
+footer form{
+	display: block;
+	width: 40%;
+	margin: 10px auto;
+}
+footer form input{
+	display: block;
+	height: 40px;
+	border: none;
+}
+footer form input:first-child{
+	float: left;
+	width: 75%;
+	padding-left: 1em;
+	color: #aaaaaa;
+}
+footer form input:last-child{
+	float: left;
+	width: 15%;
+	height: 40px;
+	background-color: #707278;
+	color: #fff;
+	cursor: pointer;
+}
+footer form:after{
+	clear: both;
+}
+/*social图标*/
+footer .social_cont{
+	width: 200px;
+	margin: 35px auto 70px auto;
+}
+footer .social_cont a{
+	display: block;
+	float: left;
+	margin-right: 30px;
+}
+footer .social_cont a:last-child{
+	margin-right: 0;
+}
+/*底边*/
+footer .footer_btm{
+	height: 60px;
+	background-color: #303039;
+	font-size: 12px;
+	line-height: 60px;
+}
+footer .copyright{
+	float: left;
+	margin-left: 100px;
+}
+footer .backTotop{
+	float: right;
+	margin-right: 40px;
+}
+/*part1*/
+.part_01{
+	height: 690px;
+	background: url(images/p1bg.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position:  center center;
+}
+.p01_wrapper{
+	background: rgba(4,0,0,0.2);
+	height: 690px;
+}
+.part_01 .p01_txt{
+	text-align: left;
+	color: #fff;
+	padding-left: 10%;
+	padding-top: 230px;
+}
+.p01_txt h3{
+	font-size: 60px;
+	font-weight: lighter;
+}
+.p01_txt p{
+	white-space: pre;
+	font-size: 21px;
+	margin-top: 30px;
+	margin-bottom: 70px;
+	line-height: 2em;
+}
+.p01_txt a{
+	color: #fff;
+	background-color: #e74f4d;
+	width: 330px;
+	height: 65px;
+	text-align: center;
+	line-height: 65px;
+	font-size: 30px;
+}
+/*part2*/
+.part_02{
+	height: 250px;
+	display: block;
+}
+.part_02 ul{
+	font-size: 0;
+}
+.part_02 li{
+	width: 25%;
+	background: #fdd;
+	display: inline-block;
+	height: 250px;
+	white-space: pre;
+	text-align: center;
+	padding-top: 134px;
+}
+.part_02 li p{
+	font-size: 14px;
+	line-height: 25px;
+	color: #767777;
+	font-family: "SimHei";
+	border-right: 2px solid #aaaaaa;
+}
+.part_02 li:nth-of-type(1){
+	background: url(images/p2_01.png) no-repeat 50% 20%;
+}
+.part_02 li:nth-of-type(2){
+	background: url(images/p2_02.png) no-repeat 50% 20%;
+}
+.part_02 li:nth-of-type(3){
+	background: url(images/p2_03.png) no-repeat 50% 20%;
+}
+.part_02 li:nth-of-type(4){
+	background: url(images/p2_04.png) no-repeat 50% 20%;
+}
+.part_02 li:nth-of-type(4) p{
+	border-right: none;
+}
+/*part3*/
+.part_03{
+	height: 360px;
+	background-color: #edecec;
+	display: block;
+}
+.part_03 img{
+	display: block;
+	margin: 0 auto;
+	padding-top: 90px;
+}
+.part_03 h3{
+	font-size: 54px;
+	color: #323333;
+	opacity: 0.5;
+	font-weight: lighter;
+	text-align: center;
+	padding-bottom: 80px;
+	line-height: 2em;
+}
+/*part4*/
+.part_04{
+	height: 340px;
+	background: url(images/p4_bg.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position:  center center;
+}
+.p04_wrapper{
+	background: #aa3533;
+	opacity: 0.2;
+	height: 340px;
+}
