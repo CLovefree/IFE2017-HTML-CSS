@@ -6,6 +6,7 @@
 }
 body{
 	min-width: 1280px;
+	text-align: center;
 }
 a{
 	display:block;
@@ -257,23 +258,23 @@ footer .backTotop{
 	background: url(images/p4_bg.png) no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position:  center center;
 }
 .p04_wrapper{
 	background:rgba(169,52,50,0.2);
 	height: 340px;
 	text-align: center;
-	padding-top: 50px;
 	color: #fff;
 }
 .p04_wrapper h4{
 	font-size: 21px;
-	margin-bottom: 30px;
+	margin-top: 53px;
+	display: inline-block;
 }
 .p04_wrapper p{
 	font-size: 12px;
 	white-space: pre;
 	line-height: 2em;
+	margin-top: 30px;
 	margin-bottom: 30px;
 }
 .p04_wrapper form{
@@ -284,6 +285,14 @@ footer .backTotop{
 	height: 38px;
 	margin-right: 28px;
 	color: #a8aaaa;
+	background: url(images/p4_arrow.png) no-repeat 95% 50%;
+	background-color: #fff;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+option{
+	background-color: #e4e3e5;
 }
 .p04_wrapper input{
 	width: 18%;
@@ -291,4 +300,67 @@ footer .backTotop{
 	background-color: #be4e48;
 	color: #fff;
 	border: none;
+}
+/*part5*/
+.part_05{
+	height: 606px;
+	background-color: #f7f7f7;
+	color:#a8aaaa;
+}
+.part_05 .p05_wrapper{
+	width: 1100px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+.part_05 .p05_wrapper div{
+	width: 200px;
+	height: 312px;
+	background-image: url(images/p5_bg.png);
+	border-image-repeat: no-repeat;
+	margin-right: 100px;
+	float: left;
+	box-shadow: -1px -1px 0 13px #fff,4px -5px 1px 10px #dadada;
+	transition: margin-top 0.3s ease-out;
+}
+/*多重阴影*/
+.p05_wrapper div:nth-of-type(2){
+	background-position: -200px 0;
+}
+.p05_wrapper div:nth-of-type(3){
+	background-position: -400px 0;
+}
+.p05_wrapper div:nth-of-type(4){
+	background-position: -600px 0;
+	margin-right: 0;
+}
+.p05_wrapper h4{
+	display: block;
+	margin-top: 350px;
+	line-height: 1.5em;
+	font-family: "SimHei";
+	font-size: 18px;
+}
+.part_05 .p05_wrapper div:hover{
+	margin-top: 100px;
+}
+.part_05 .p05_wrapper div:hover h4{
+	margin-top: -100px;
+	font-size: 24px;
+	color: #323333;
+	width: 100%;
+	letter-spacing: 1em;
+	text-align: center;
+	line-height: 2em;
+}
+/*part6*/
+.part_06{
+	height: 567px;
+}
+.p6_bg{
+	background: url(images/p6_01.png) no-repeat;
+	width: 850px;
+	height: 567px;
+}
+.part_06 div{
+	display: inline-block;
 }

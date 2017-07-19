@@ -12,8 +12,18 @@ section和article的理解和使用
 
 input的边框
 
+margin-top和padding-top对布局的区别影响
+
 清除浮动
 
 white-space: pre;
 
 关于宽度变宽了，高度不变就看起来窄了？怎么办？
+
+select的CSS
+###p5
+
+h和p的对齐
+
+多重阴影
+背景定位
