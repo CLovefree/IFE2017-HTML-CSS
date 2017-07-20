@@ -27,3 +27,29 @@ h和p的对齐
 
 多重阴影
 背景定位
+
+### p6
+
+小三角
+
+height和line-height更多详情方框
+
+### p7
+
+display:inline-block
+
+### p8
+
+向下的箭头
+
+	.p8left .p8more span{
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	border: 1px solid red;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+
+延长线变形
