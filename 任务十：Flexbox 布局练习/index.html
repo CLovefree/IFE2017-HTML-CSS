@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox布局练习</title>
+	<style type="text/css">
+		body{
+			padding: 20px;
+			margin: 0;
+		}
+		.container{
+			width: 100%;
+			min-width: 150px;
+			display: flex;
+			display: -webkit-flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+		.container div{
+			width: 150px;
+			margin-bottom: 20px;
+		}
+		.item1{
+			height: 120px;
+			width: 150px;
+			margin-bottom: 20px;
+			background-color: #E8A3FF;
+		}
+		.item2{
+			height: 100px;
+			width: 150px;
+			margin-bottom: 20px;
+			background-color: #E8A3FF;
+		}
+		.item3{
+			height: 40px;
+			width: 150px;
+			margin-bottom: 20px;
+			background-color: #E8A3FF;
+		}
+		.item4{
+			height: 200px;
+			width: 150px;
+			margin-bottom: 20px;
+			background-color: #A3FFD3;
+		}
+		@media screen and (max-width: 640px) {
+			.container{
+				align-items: flex-start;
+			}
+			.item1,.item2,.item3{
+				order:1;
+			}
+		}
+	</style>
+	<meta name="viewport" content="initial-scale=1,width=device-width,user-scalable=0">
+</head>
+</head>
+<body>
+	<div class="container">
+		<div class="item1"></div>
+		<div class="item2"></div>
+		<div class="item3"></div>
+		<div class="item4"></div>
+	</div>
+</body>
+</html>
