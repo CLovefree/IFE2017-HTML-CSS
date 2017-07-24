@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+    <style type="text/css">
+    	li{
+    		list-style: none;
+    	}
+    </style>
+  </head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">
+<!--   
+    <li>第一名：福州（样例），10</li>
+      <li>第二名：福州（样例），10</li> -->
+  </ul>
+
+<script type="text/javascript">
+
+var aqiDate = [
+["北京",90],
+["上海",50],
+["福州",10],
+["广州",50],
+["成都",90],
+["西安",100],
+];
+(function(){
+
+// alert(aqiDate[2]);
+var oUl=document.getElementById('aqi-list');
+var aList=new Array();
+var i=0;
+var j=0;
+
+for (var i = 0; i < aqiDate.length; i++) {
+	if(aqiDate[i][1] > 60){
+		aList[j]=aqiDate[i];
+		j++;
+	};
+//获得了满足条件的新数组aList
+};
+// alert(aList);
+aList.sort(function(num1,num2){
+	return num1-num2;
+});
+// alert(aList);排序，升序
+aList.reverse();
+// alert(aList);
+// 反序，降序
+
+  var m=0;
+  for(var m=0;m<aList.length;m++){
+    // console.log(aList[m]);
+    var oLi=document.createElement("li");
+    oLi.innerHTML="第"+(m+1)+"名："+aList[m][0]+"，"+aList[m][1];
+    oUl.appendChild(oLi);
+  };
+})();
+
+
+</script>
+</body>
+</html>
