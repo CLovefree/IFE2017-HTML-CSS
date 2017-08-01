@@ -60,35 +60,48 @@
 		var oBtn4=document.getElementById('btn4');		
 		var oUl=document.getElementById('ul1');
 
+		var oLi=document.createElement('li');
+		var aLi=oUl.getElementsByTagName('li');
+
 		oBtn1.onclick=function (){
-			if(!isNaN(oTxt.value)){
-				var oLi=document.createElement('li');
-				var aLi=oUl.getElementsByTagName('li');
-				
-				oLi.innerHTML=oTxt.value;
-				
-				if(aLi.length==0)
-				{
-					oUl.appendChild(oLi);
-					oTxt.value='';
+			if(!isNaN(oTxt.value)&&oTxt.value>10&&oTxt.value<100){
+				if(aLi.length<60){
+									
+					oLi.innerHTML=oTxt.value;
+					
+					if(aLi.length==0)
+					{
+						oUl.appendChild(oLi);
+						oTxt.value='';
+					}
+					else
+					{
+						oUl.insertBefore(oLi, aLi[0]);
+						oTxt.value='';
+					}
 				}
-				else
-				{
-					oUl.insertBefore(oLi, aLi[0]);
+				else{
+					alert("超过60个");
 					oTxt.value='';
 				}
 			}	
 			else{
-				alert("请输入数字");
+				alert("请输入10-100的数字");
 				oTxt.value='';
 			}	
 		};
 
 		oBtn2.onclick=function (){
 			if(!isNaN(oTxt.value)){
+				if(oTxt.value>10&&oTxt.value<100){
 				var oLi=document.createElement('li');			
 				oUl.appendChild(oLi).innerHTML=oTxt.value;
 				oTxt.value='';//输入后清空
+			    }
+			    else{
+					alert("请输入10-100的数字");
+					oTxt.value='';
+				}
 			}
 			else{
 				alert("请输入数字");
