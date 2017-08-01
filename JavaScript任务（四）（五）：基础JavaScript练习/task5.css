@@ -1,0 +1,70 @@
+	body{
+			background: #f8fcd4;
+			/* 制作背景渐变效果 */
+			background: -webkit-linear-gradient(to bottom,#f8fcd4 19%.#dbfacb 100%);
+			background-attachment: fixed;
+		}
+		.container{
+			width: 630px;
+			margin: 100px auto;
+			font-size: 12px;
+		}
+		ul{
+			display: flex;
+			-ms-align-items: flex-end;
+			align-items: flex-end;
+		}
+		li{
+			display: inline-block;
+			background-color: #0E8591;
+			color: #fff;
+			margin-right: 0.2em;
+			width: 2em;
+			text-align: center;
+		}
+		input{
+			border-radius: 3px;
+			border: 1px solid #ccc;
+			background-color: #fff;
+			width: 150px;
+			height: 30px;
+		}	
+		button{
+			border-radius: 3px;
+			border: 1px solid #ccc;
+			background-color: #fff;
+			width: 150px;
+			height: 50px;
+			color: #fff;
+			font-weight: bold;
+			cursor: pointer;
+			background: rgb(255,183,0);
+			/* 制作渐变效果 */
+			background: -webkit-linear-gradient(180deg, rgba(255,183,0,1) 0%, rgba(255,140,0,1) 100%);
+			background: linear-gradient(180deg, rgba(255,183,0,1) 0%, rgba(255,140,0,1) 100%);
+			/* 设置按钮文本阴影效果 */
+			text-shadow: 1px 1px 1px rgba(0,0,0,4);
+		}
+		.container form:last-child label{
+			display: inline-block;
+			width: 150px;
+		}
+		.container form:last-child button{
+			width: 100px;
+			height: 40px;
+			margin: 20px;
+			background: #DBF033;
+		}
+		.container form:first-child button:hover{
+			text-shadow: 3px 1px 1px rgb(99, 82, 82);
+		}
+		.container form:last-child button:hover{
+			width: 100px;
+			height: 40px;
+			margin: 20px;
+			cursor: pointer;
+			background: rgb(189,138,122);
+			background: -webkit-linear-gradient(180deg,  rgba(0, 255, 135,1) 0%,rgba(122, 189, 157,1) 100%);
+			background: linear-gradient(180deg,  rgba(0, 255, 135,1) 0%,rgba(122, 189, 157,1) 100%);
+			box-shadow: 2px 2px 11px -2px #A19D9D;
+		}
