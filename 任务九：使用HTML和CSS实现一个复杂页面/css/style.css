@@ -1,0 +1,537 @@
+@import 'fonts/style.css';
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+body{
+	height: 100%;
+}
+ul{
+	list-style: none;
+}
+li{
+	list-style: none;
+}
+/**/
+header{
+	background: #2189bf;
+	height: 56px;
+	position: relative;
+}
+header .logo{
+	width: 36px;
+	height: 36px;
+	background-color: #fff;
+	position: absolute;
+	top: 10px;
+	left: 49px;
+}
+header .logo-sub{
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	right: -4px;
+	bottom: -4px;
+	border-top: 4px;
+	border-left: 4px;
+	border-style: solid;
+	border-color: #2189bf; 
+}
+.head-search{
+	display: block;
+	position: absolute;
+	top: 14px;
+	right: 200px;
+}
+.head-search span{
+	display: inline-block;
+	color: #ccc;
+	position: absolute;
+	left: 14px;	
+	top: 8px;
+	font-size: 14px;
+}
+.head-search input{
+	height: 28px;
+	width: 300px;
+	padding-left: 30px;
+	border-radius: 20px;
+	border: none;
+}
+.log-in{
+	color: #fff;
+	position: absolute;
+	right: 30px;
+	top: 17px;
+}
+/**/
+.aside{
+	/*height: 1024px;*/
+	background-color: #2a2e3d;
+	color: #6e8095;
+	position: relative;
+}
+.aside .user{
+	padding: 20px;
+}
+.aside img{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-left: calc(50% - 60px);
+	border-radius: 30px;
+	background-color: #b9babe;
+	border: 5px solid #2a2e3d;
+	box-shadow: 0px 0px 0px 2px #b9babe;
+	vertical-align: middle;
+	margin-bottom: 20px;
+}
+#username{
+	width: 50px;
+	overflow: visible 
+	text-align: center;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+	display: inline-block;
+}
+.aside .user>div{
+	margin-bottom: 20px;
+	text-align: center;
+}
+.aside .user>div span{
+	padding: 10px;
+}
+.detail{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.detail h3{
+	margin-bottom: 20px;
+}
+.detail h4{
+	cursor: pointer;
+}
+.detail h4+ul{
+	padding-left: 2em;
+}
+.detail ul{
+	list-style: none;
+}
+.detail li{
+	list-style: none;
+	margin-top: 10px;
+	margin-bottom: 10px; 
+}
+/*右边主体*/
+.main{
+	background-color: #ededec;
+}
+.main .breadcrumb {
+	padding-left: 10px;
+	padding-top: 10px;
+	height: 30px;
+	background-color: #fff;
+}
+.main .breadcrumb li{
+	display: inline-block;
+	color: #ccc;
+	padding: 0 6px;
+}
+.main .breadcrumb li:after{
+	content: " / ";
+}
+.main .breadcrumb li:last-child:after{
+	content: "";
+}
+.main-body{
+	padding: 15px 50px 50px 50px;
+}
+.main-body>div{
+	margin-bottom: 10px;
+	border-radius: 1px;
+	box-shadow: 0 0 1px 2px rgba(131,138,149,0.2);
+}
+/*查询项*/
+.main-search{
+	height: 86px;
+	padding: 10px 20px;
+	background-color: #fff;
+	color: #aaa;
+	position: relative;
+}
+.main-search select,.main-search input{
+	height: 2em;
+	padding: 0 1em;
+}
+#search-item{
+	position: absolute;
+	top: 20px;
+	left: 30px;
+}
+#search-buysell{
+	position: absolute;
+	top: 20px;
+	left: 200px;
+}
+#search-buysell .buyer{
+	margin-bottom: 15px;
+}
+.change{
+	height: 1.5em;
+	width: 1.5em;
+	background: #aaa;
+	color: #fff;
+	border: none;
+	position: absolute;
+	left: 120px;
+	top: 20px;
+}
+#search-time{
+	position: absolute;
+	top: 20px;
+	left: 350px;
+}
+#search-time input{
+	width: 10em;
+	height: 2em;
+	box-sizing: border-box;
+}
+#usetime{
+	width: 6em;
+}
+#persons{
+	width: 8em;
+}
+#numbers{
+	width: 8em;
+}
+#personsnum{
+	position: absolute;
+	top: 62px;
+	left: 350px;
+}
+.main-search .search-item{
+	position: absolute;
+	right: 50px;
+	top: 36px;
+}
+.search-item{
+	background-color: #388ac1;
+	color: #fff;
+	border: none;
+	font-size: 14px;
+	padding: 0 1em;
+	line-height: 2em;
+}
+/**/
+.main-history {
+	height: 80px;
+	background-color: #eeedec;
+}
+.main-history ul{
+	width: 650px;
+	height: 60px;
+	overflow: hidden;
+}
+.main-history  li{
+	width: 100px;
+	height: 60px;
+	background-color: #fff;
+	margin-right: 10px;
+	float: left;
+	position: relative;
+}
+/*主体结束*/
+
+.content{border:3px solid #ddd;width:405px;}
+.content table{
+	padding: 20px;
+	border: none;
+}
+td{
+	border: none; 
+}
+.datetable{border-top:1px solid #ccc;border-left:1px solid #ccc;background:#fff;}
+.datetable td{border-bottom:1px solid #ccc;border-right:1px solid #ccc;text-align:center;}
+.datetable thead td{padding:10px 5px;font:normal 12px/normal 'microsoft yahei';text-align:center;}
+.datetable thead td span{padding:0 5px;}
+.datetable tbody td{padding:5px 3px;font-size:12px;}
+@media (min-width: 1200px) {
+	.main-body{
+		padding: 15px 50px 50px 50px;
+	}
+}
+@media (min-width: 1023px) and (max-width: 1199px) {
+	.aside{
+		font-size: 13px;
+	}
+	#username{
+		display: block;
+		margin-left: calc(50% - 25px);
+		margin-bottom: 20px;
+	}
+	.aside img{
+		margin-left: calc(50% - 25px);
+	}
+	.main-body{
+		padding: 15px 30px 15px 30px;
+	}
+
+}
+@media (max-width: 768px) and (min-width: 1024px) {
+	.aside{
+		font-size: 13px;
+	}
+	#username{
+		display: block;
+		margin-left: calc(50% - 25px);
+		margin-bottom: 20px;
+	}
+	.aside img{
+		margin-left: calc(50% - 25px);
+	}
+	.main-body{
+		padding: 15px 30px 15px 30px;
+	}
+		.main-search{
+		height: 160px;
+	}
+	#search-buysell{
+	position: absolute;
+	top: 20px;
+	left: 280px;
+	}
+	#search-time{
+		position: absolute;
+		top: 100px;
+		left: 30px;
+	}
+	#personsnum{
+		position: absolute;
+		top: 130px;
+		left: 30px;
+	}
+	.main-search .search-item{
+	position: absolute;
+	right: 10%;
+	top: 66px;
+}
+}
+@media (max-width: 768px){
+	.head-search{
+		right: 100px;
+	}
+	.head-search input{
+		width: 100px;
+	}
+	.aside .user{
+		float: left;
+		margin-left: 15%;
+		margin-top: 5%;
+	}
+	.nav{
+		float: right;
+		margin-right: 20%;
+	}
+	.user{
+		/*height: 300px;*/
+	}
+	.aside img{
+		margin-left: calc(50% - 25px);
+	}
+	#username{
+		display: block;
+		margin-left: calc(50% - 25px);
+		margin-bottom: 20px;
+	}
+	.detail{
+		font-size: 12px;
+		margin-bottom: 0;
+		padding: 5px;
+	}
+	.detail h3{
+		margin-bottom: 5px;
+	}
+	.detail h4{
+		line-height: 1.8em;
+	}
+	.detail ol li{
+		margin-bottom: 0;
+	}
+
+	.main-body{
+		font-size: 12px;
+		padding: 15px 20px 15px 20px;
+	}
+	.main-search{
+		height: 150px;
+	}
+	.main-search select,.main-search input{
+		padding: 0;
+	}
+	#search-buysell{
+	position: absolute;
+	top: 20px;
+	left: 200px;
+	}
+	#search-time{
+		position: absolute;
+		top: 100px;
+		left: 30px;
+	}
+	#personsnum{
+		position: absolute;
+		top: 130px;
+		left: 30px;
+}
+/*#search-time input{
+	width: 50%;
+	height: 2em;
+}
+#usetime{
+	width: 20%;
+}
+#persons{
+	width: 35%;
+}
+#numbers{
+	width: 35%;
+}*/
+.main-search .search-item{
+	position: absolute;
+	right: 10%;
+	top: 69px;
+}
+}
+@media (max-width: 540px){
+	.main-search{
+		height: 180px;
+	}
+	.main-search .search-item{
+		position: absolute;
+		height: 2em;
+		left: 48%;
+		top: 165px;
+	}
+}
+
+.container {
+width: 100%;
+box-sizing: border-box;
+}
+
+.container:before, .container:after,header:after{
+content: "";
+display: table;
+clear: both; 
+}
+
+.row{
+/*padding: 5px;*/
+float: left;
+box-sizing: border-box; 
+}
+
+@media (min-width: 769px) {
+.col-md-1 {
+width: 8.33333%; 
+}
+
+.col-md-2 {
+width: 16.66667%; 
+}
+
+.col-md-3 {
+width: 25%; 
+}
+
+.col-md-4 {
+width: 33.33333%; 
+}
+
+.col-md-5 {
+width: 41.66667%; 
+}
+
+.col-md-6 {
+width: 50%; 
+}
+
+.col-md-7 {
+width: 58.33333%; 
+}
+
+.col-md-8 {
+width: 66.66667%; 
+}
+
+.col-md-9 {
+width: 75%; 
+}
+
+.col-md-10 {
+width: 83.33333%; 
+}
+
+.col-md-11 {
+width: 91.66667%; 
+}
+
+.col-md-12 {
+width: 100%; 
+} 
+}
+@media (max-width: 768px) {
+.col-sm-1 {
+width: 8.33333%; 
+}
+
+.col-sm-2 {
+width: 16.66667%; 
+}
+
+.col-sm-3 {
+width: 25%; 
+}
+
+.col-sm-4 {
+width: 33.33333%; 
+}
+
+.col-sm-5 {
+width: 41.66667%; 
+}
+
+.col-sm-6 {
+width: 50%; 
+}
+
+.col-sm-7 {
+width: 58.33333%; 
+}
+
+.col-sm-8 {
+width: 66.66667%; 
+}
+
+.col-sm-9 {
+width: 75%; 
+}
+
+.col-sm-10 {
+width: 83.33333%; 
+}
+
+.col-sm-11 {
+width: 91.66667%; 
+}
+
+.col-sm-12 {
+width: 100%; 
+} 
+}

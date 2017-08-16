@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务九：使用HTML/CSS实现一个复杂页面</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="fonts/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/sucaijiayuan.js"></script>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<div class="logo-sub"></div>
+		</div>
+		<div class="head-search">
+		    <span class="icon-search"></span>
+		    <input type="search">
+		</div>
+		<div class="log-in">
+			<span class="icon-user"></span>
+			<span>登录</span>	
+		</div>
+	</header>
+<!-- 主题部分 -->
+	<div class="container">
+		<div class="aside row col-md-2 col-sm-12">
+			<div class="user">
+				<img src="" alt="">
+				<span id="username">ABC123</span>
+				<div>
+					<div>
+						<span id="collection-num">110</span>
+						<span id="fans-num">313</span>
+					</div>
+					<div>
+						<span>收藏</span>
+						<span>粉丝</span>
+					</div>
+				</div>					
+			</div>
+		<!-- 左侧导航 -->
+			<div class="nav">
+				<!-- 个人报表 -->
+				<div id="report" class="detail report">
+					<h3 class="icon-pie-chart"> 个人报表</h3>
+					<ol>
+						<li>
+							<h4 class="icon-folder"> 文件一</h4>
+							<ul style="display: none">
+								<li class="icon-file-text2"><a href="#"> 文档一</a></li>
+								<li class="icon-file-text2"><a href="#"> 文档二</a></li>
+							</ul>
+						</li>
+						<li>
+							<h4 class="icon-folder"> 文件二</h4>
+							<ul style="display: none">
+								<li class="icon-file-text2"><a href="#"> 文档一</a></li>
+								<li class="icon-file-text2"><a href="#"> 文档二</a></li>
+							</ul>
+						</li>
+						<li>
+							<h4 class="icon-folder"> 文件三</h4>
+							<ul style="display: none">
+								<li class="icon-file-text2"><a href="#"> 文档一</a></li>
+								<li class="icon-file-text2"><a href="#"> 文档二</a></li>
+							</ul>
+						</li>
+					</ol>
+				</div>
+				<!-- 个人报表结束 -->
+				<!-- 个人收藏 -->
+				<div id="report" class="detail">
+					<h3 class="icon-star-full"><a hred="#"> 个人收藏</a></h3>
+				</div>
+				<!-- 我的分享 -->
+				<div id="report" class="detail">
+					<h3 class="icon-upload"><a hred="#"> 我的分享</a></h3>
+				</div>
+				<!-- 图库 -->
+				<div id="report" class="detail">
+					<h3 class="icon-images"><a hred="#"> 我的图库</a></h3>
+				</div>
+				<!-- 成长记录 -->
+				<div id="report" class="detail">
+					<h3 class="icon-star-full"><a hred="#"> 成长记录</a></h3>
+				</div>
+				<!-- 账户信息 -->
+				<div id="report" class="detail">
+					<h3 class="icon-address-book"><a hred="#"> 账户信息</a></h3>
+				</div>
+
+			</div>
+			<!-- 左侧导航结束 -->
+		</div>
+		<!-- 侧边结束 -->
+		<div class="main row col-md-10 col-sm-12">
+			<ol class="breadcrumb">
+				<li><a href="#">0站</a></li>
+				<li><a href="#">个人报表</a></li>
+				<li><a href="#">文件一</a></li>
+				<li id="bread-active"><a href="#">文档一</a></li>
+			</ol>
+			<div class="main-body">
+			<!-- 搜索 -->
+				<div class="main-search">
+					<form action="">
+
+						<div id="search-item">
+							<label>查询项</label>
+							<select name="item">
+								<option value="第一项">第一项</option>
+								<option value="第一项">第一项</option>
+								<option value="第一项">第一项</option>
+							</select>
+						</div>
+						<div id="search-buysell">
+							<div class="buyer">
+								<label>买方</label>
+								<select>
+									<option value="">小A</option>
+									<option value="">小B</option>
+									<option value="">小C</option>
+								</select>
+							</div>
+							<div class="seller">
+								<label>卖方</label>
+								<select>
+									<option value="">小D</option>
+									<option value="">小E</option>
+									<option value="">小F</option>
+								</select>
+							</div>
+							
+							<button class="change">换</button>
+						</div>										
+						<div id="search-time">
+							<label>日期</label>
+							<input type="date">
+							<label>总耗时</label>
+							<select name="usetime" id="usetime">
+								<option value="">8天</option>
+								<option value="">10天</option>
+								<option value="">12天以上</option>
+							</select>
+						</div>
+						<div id="personsnum">
+							<label>人数</label>
+							<select name="persons" id="persons">
+								<option value="">10人</option>
+								<option value="">8人</option>
+								<option value="">6人以下</option>
+							</select>
+							<label>成交项</label>
+							<select name="numbers" id="numbers">
+								<option value="">10项</option>
+								<option value="">12项</option>
+								<option value="">12项以上</option>
+							</select>
+						</div>
+						
+						<button class="search-item">搜索</button>
+					</form>
+				</div>
+				<!-- 历史查询 -->
+				<div class="main-history">
+					<span><i><</i></span>
+					<ul>
+						<li>
+							<span class="his-time">10.00 am</span>
+							<span class="his-yuan">￥</span><span class="his-money">1200</span>
+						</li>
+						<li>
+							<span class="his-time">10.00 am</span>
+							<span class="his-yuan">￥</span><span class="his-money">1200</span>
+						</li>
+						<li>
+							<span class="his-time">10.00 am</span>
+							<span class="his-yuan">￥</span><span class="his-money">1200</span>
+						</li>
+						<li>
+							<span class="his-time">10.00 am</span>
+							<span class="his-yuan">￥</span><span class="his-money">1200</span>
+						</li>
+						<li>
+							<span class="his-time">10.00 am</span>
+							<span class="his-yuan">￥</span><span class="his-money">1200</span>
+						</li>
+						<li>
+							<span class="his-time">10.00 am</span>
+							<span class="his-yuan">￥</span><span class="his-money">1200</span>
+						</li>
+					</ul>
+					<span><i>></i></span>
+					<div>
+						<span class="icon-calendar"></span><span>历史查询</span>
+					</div>
+				</div>
+				<!-- 月份统计 -->
+				<div class="main-statistics">
+					<div>
+						<span>133311</span>
+						<span>成交量</span>
+						<img alt="">
+					</div>
+					<div>
+						<span>133311</span>
+						<span>成交量</span>
+						<img alt="">
+					</div>
+					<div>
+						<span>133311</span>
+						<span>成交量</span>
+						<img alt="">
+					</div>
+					<div>
+						<span>133311</span>
+						<span>成交量</span>
+						<img alt="">
+					</div>
+				</div>
+				<div class=" main-look main-project">
+					<div class="main-look-title">
+						<span>第一组项目</span>
+					</div>
+					<div>
+						<ul>
+							<li>项目一</li>
+							<li>项目一</li>
+							<li>项目一</li>
+							<li>项目一</li>
+							<li>项目一</li>
+						</ul>
+						<table>
+							<tr>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+							</tr>
+							<tr>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+							</tr>
+							<tr>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+							</tr>
+							<tr>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+							</tr>
+							<tr>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+							</tr>
+							<tr>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class=" main-look main-project-det">
+					<div class="main-look-title">
+						<span>第一组项目</span>
+					</div>
+					<div>
+						<span>标题</span>
+						<p>项目报表三</p>
+					</div>
+					<div>
+						<span>标题</span>
+						<p>项目报表三</p>
+						<span>价格</span>
+						<p>￥158</p>
+						<span>负责人</span>
+						<p>小A</p>
+					</div>
+					<div>
+						<span>详细描述</span>
+						<p>该项目负责人是...</p>
+					</div>
+					<input type="radio">
+					<span>遵守保密协议</span>				
+					<button class="search-item">搜索</button>
+				</div>
+				<div class=" main-look main-calendar">
+					<div class="main-look-title">
+						<span>日历</span>
+					</div>
+					<form name="CLD" class="content">
+						<table width="100%" border="0" cellpadding="0" cellspacing="0" class="datetable">
+						    <thead>
+						    <tr>
+						      <td colSpan=7>
+						        <select name="SY" onchange="changeCld();" style="font-SIZE: 9pt">
+						        <script>
+						            for(i=1900;i<2050;i++) document.write('<option>'+i);
+						        </script>
+						         </select>
+						         <select name="SM" onchange="changeCld();" style="font-SIZE: 9pt">
+						        <script>
+						            for(i=1;i<13;i++) document.write('<option>'+i);
+						        </script>
+						        </select>
+						        </font><span id="GZ" style="display: none;"></span>
+						         <select name="SD" onchange="changeCld();" style="font-SIZE: 9pt">
+						         <option value="" selected>标注日期</option>
+						        <script>
+						            for(i=1;i<32;i++) document.write('<option>'+i);
+						        </script>
+						        </select>
+						        <button>返回今天</button>
+						      </td>
+						    </tr>
+						    </thead>
+						    <tbody>
+						    <tr style="background:#eee;">
+						      <td width="54">日</td>
+						      <td width="54">一</td>
+						      <td width="54">二</td>
+						      <td width="54">三</td>
+						      <td width="54">四</td>
+						      <td width="54">五</td>
+						      <td width="54">六</td>
+						    </tr>            
+						    <script>
+						    var gNum;
+						    for(i=0;i<6;i++) {
+						       document.write('<tr align="center">');
+						       for(j=0;j<7;j++) {
+						          gNum = i*7+j;
+						          document.write('<td id="GD' + gNum +'"><font id="SD' + gNum +'" size=2 face="Arial Black"');
+						          if(j == 0) document.write('color="red"');
+						          if(j == 6) document.write('color="#000080"');
+						          document.write('></font><br/><font id="LD' + gNum + '" size=2 style="font-size:9pt"></font></td>');
+						       }
+						       document.write('</tr>');
+						    }
+						   </script>
+						   </tbody>
+						</table>
+					</form>
+				</div>
+				<div class=" main-look main-related">
+					<div class="main-look-title">
+						<span>汽车行业品牌榜</span>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>排名</th>
+								<th>品牌</th>
+								<th>搜索指数</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>大众</td>
+								<td>1488747</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>大众</td>
+								<td>1488747</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>大众</td>
+								<td>1488747</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>大众</td>
+								<td>1488747</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>大众</td>
+								<td>1488747</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>大众</td>
+								<td>1488747</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>大众</td>
+								<td>1488747</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>大众</td>
+								<td>1488747</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+
+	window.onload=function(){
+		var oDiv=document.getElementById('report');
+		var aH4=oDiv.getElementsByTagName('h4');
+		var aUl=oDiv.getElementsByTagName('ul');
+		var i=0;
+
+		for (var i = 0; i < aH4.length; i++) {
+			aH4[i].onclick=function(){
+				var oUl=this.parentNode.getElementsByTagName('ul')[0];
+				// var para=document.creatElement("span");
+				if (this.calssName == 'active') {				
+					oUl.style.display='none';
+					this.calssName='';
+				}else{
+					oUl.style.display='block';
+					this.calssName='active';
+				}
+			}
+		}
+		var aBread=document.getElementById('bread-active');
+		aBread.style.color='#2189bf';
+	}
+	</script>
+</body>
+</html>
